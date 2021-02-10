@@ -14,7 +14,7 @@ This repository hosts automatic workflow, executed by means of Github actions, a
 
 This workflow is an extension of [excel2rdf](https://github.com/fair-data-collective/excel2rdf-template).
 
-# OntoStack
+# [OntoStack](http://ontology.deic.dk/)
 
 OntoStack is a set of orchestrated micro-services configured and interfaced such that they can intake vocabularies and resolve their terms and RDF properties upon requests either by humans or machines.
 
@@ -23,12 +23,6 @@ Some of OntoStack micro-services are:
 - [Jena Fuseki](https://jena.apache.org/documentation/fuseki2/) a graph database
 - [SKOSMOS](http://www.skosmos.org/) a web-based SKOS browser acting as a front-end for the vocabularies persisted by the graph database
 - [Træfik](https://doc.traefik.io/traefik/) an edge router responsible for proper serving of URL requests
-
-Currently three instances of OntoStack are available:
-
-- Departamental instance of [DTU Wind Energy](https://www.vindenergi.dtu.dk/english/): http://data.windenergy.dtu.dk/ontologies
-- National (Danish) instance run by [DeiC](https://deic.dk/): http://ontology.deic.dk/
-- International instance run by [FAIR Data Collective](http://fairdatacollective.org/): http://vocab.fairdatacollective.org
 
 # Configuring sheet2rdf
 
