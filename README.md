@@ -1,7 +1,8 @@
-[![DOI](https://zenodo.org/badge/327900313.svg)](https://zenodo.org/badge/latestdoi/327900313)
-[![CI](https://github.com/niva83/sheet2rdf/workflows/Sheet2RDF/badge.svg)](https://github.com/niva83/sheet2rdf/actions?query=workflow%3ASheet2RDF)
+# ROCK-N-ROLL control vocabulary
 
-# sheet2rdf
+We use **sheet2rdf** and **OntoStack** to create and serve **ROCK-N-ROLL** control vocabulary.
+
+# [sheet2rdf](https://github.com/niva83/sheet2rdf)
 
 This repository hosts automatic workflow, executed by means of Github actions, and underlying shell and python scripts which:
 
@@ -48,11 +49,3 @@ In case you want to use **sheet2rdf** in your own work you need to:
 # License
 
 This work is licensed under [Apache 2.0 License](https://github.com/niva83/sheet2rdf/blob/main/License.md)
-
-
-# Citation
-
-In case you are using this workflow the author kindly requests you to cite this repository in your publications such as:
-> Nikola Vasiljevic. (2021, January 11). sheet2rdf: First release (Version v0.1). Zenodo. http://doi.org/10.5281/zenodo.4432136
-
-For any other citation format visit http://doi.org/10.5281/zenodo.4432136
