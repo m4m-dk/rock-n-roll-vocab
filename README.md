@@ -1,3 +1,5 @@
+[![CI](https://github.com/m4m-dk/rock-n-roll-vocab/workflows/Sheet2RDF/badge.svg)](https://github.com/m4m-dk/rock-n-roll-vocab/actions?query=workflow%3ASheet2RDF)
+
 # ROCK-N-ROLL control vocabulary
 
 We use **sheet2rdf** and **OntoStack** to create and serve **ROCK-N-ROLL** control vocabulary.
