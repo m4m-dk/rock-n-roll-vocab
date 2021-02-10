@@ -1,0 +1,27 @@
+ConceptScheme URI,http://vocab.deic.dk/rock-n-roll/
+PREFIX,rock-n-roll,http://vocab.deic.dk/rock-n-roll/
+PREFIX,pav,http://purl.org/pav/
+PREFIX,dct,http://purl.org/dc/terms/
+PREFIX,owl,http://www.w3.org/2002/07/owl#
+PREFIX,xsd,http://www.w3.org/2001/XMLSchema#
+PREFIX,skos,http://www.w3.org/2004/02/skos/core#
+skos:prefLabel,Short or long but well chose name of the vocabulary
+dct:title,Reuse prefLable from the above cell
+dct:description,"Give a good defintion of this vocabulary, what it is, what is going to be use for, etc."
+dct:creator,"Put ORCID no of the vocabulary creator, repeat this row for every additional creator."
+dct:rights,"State under what license this vocabulary is provided, preferably chose license from https://spdx.org/licenses/ "
+pav:version,"Always provide the version of the vocabulary. You can use form majorChange.minorChange.bugFix (e.g., 1.0.1a)"
+pav:createdOn,"The initial date of the vocabulary creation in form of YYYY-MM-DDTHH:mm:ss+timeZoneOffset (e.g., 2020-10-30T13:43:00+00:00)"
+pav:lastUpdatedOn,"The date of the last update of the vocabulary in form of YYYY-MM-DDTHH:mm:ss+timeZoneOffset (e.g., 2020-10-30T13:43:00+00:00)"
+
+
+Identifier,skos:prefLabel@en,"skos:altLabel(separator="","")",skos:definition@en,"skos:broader(separator="","")","skos:closeMatch(separator="","")","skos:exactMatch(separator="","")","skos:broadMatch(separator="","")","skos:narrowMatch(separator="","")","skos:relatedMatch(separator="","")",owl:deprecated^^xsd:boolean,dct:isReplacedBy,skos:editorialNote@en,"dct:creator(separator="","")","dct:contributor(separator="","")"
+rock-n-roll:Deprecated,Deprecated,,This is a set of controlled terms which are deprecated.,,, 
+rock-n-roll:,,,,,, 
+rock-n-roll:
+rock-n-roll:
+rock-n-roll:
+rock-n-roll:
+rock-n-roll:
+rock-n-roll:
+rock-n-roll:
