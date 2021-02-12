@@ -1,5 +1,5 @@
-ConceptScheme URI,http://vocab.deic.dk/rock-n-roll/
-PREFIX,rock-n-roll,http://vocab.deic.dk/rock-n-roll/
+ConceptScheme URI,http://ontology.deic.dk/cv/rock-n-roll/
+PREFIX,rock-n-roll,http://vocab.deic.dk/cv/rock-n-roll/
 PREFIX,pav,http://purl.org/pav/
 PREFIX,dct,http://purl.org/dc/terms/
 PREFIX,owl,http://www.w3.org/2002/07/owl#
@@ -17,7 +17,7 @@ pav:lastUpdatedOn,"The date of the last update of the vocabulary in form of YYYY
 
 Identifier,skos:prefLabel@en,"skos:altLabel(separator="","")",skos:definition@en,"skos:broader(separator="","")","skos:closeMatch(separator="","")","skos:exactMatch(separator="","")","skos:broadMatch(separator="","")","skos:narrowMatch(separator="","")","skos:relatedMatch(separator="","")",owl:deprecated^^xsd:boolean,dct:isReplacedBy,skos:editorialNote@en,"dct:creator(separator="","")","dct:contributor(separator="","")"
 rock-n-roll:Deprecated,Deprecated,,This is a set of controlled terms which are deprecated.,,, 
-rock-n-roll:,,,,,, 
+rock-n-roll:TestTerm,TestTerm,,,rock-n-roll:Deprecated,, 
 rock-n-roll:
 rock-n-roll:
 rock-n-roll:
