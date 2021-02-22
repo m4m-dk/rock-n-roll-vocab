@@ -5,23 +5,26 @@ PREFIX,dct,http://purl.org/dc/terms/
 PREFIX,owl,http://www.w3.org/2002/07/owl#
 PREFIX,xsd,http://www.w3.org/2001/XMLSchema#
 PREFIX,skos,http://www.w3.org/2004/02/skos/core#
-skos:prefLabel,Short or long but well chose name of the vocabulary
-dct:title,Reuse prefLable from the above cell
-dct:description,"Give a good defintion of this vocabulary, what it is, what is going to be use for, etc."
-dct:creator,"Put ORCID no of the vocabulary creator, repeat this row for every additional creator."
-dct:rights,"State under what license this vocabulary is provided, preferably chose license from https://spdx.org/licenses/ "
-pav:version,"Always provide the version of the vocabulary. You can use form majorChange.minorChange.bugFix (e.g., 1.0.1a)"
-pav:createdOn,"The initial date of the vocabulary creation in form of YYYY-MM-DDTHH:mm:ss+timeZoneOffset (e.g., 2020-10-30T13:43:00+00:00)"
-pav:lastUpdatedOn,"The date of the last update of the vocabulary in form of YYYY-MM-DDTHH:mm:ss+timeZoneOffset (e.g., 2020-10-30T13:43:00+00:00)"
+skos:prefLabel,rock-n-roll
+dct:title,rock-n-roll
+dct:description,"This Vocabulary describes some few terms of high level geologic concept hierarchy. This vocabulary is not complete and half randomly made up, but based on the USGS North American Geological Map Data Model. It is a test before the M4M workshop."
+dct:creator,https://orcid.org/0000-0003-0682-8303
+dct:rights,https://spdx.org/licenses/CC-BY-1.0.html
+pav:version,version 0.1
+pav:createdOn,2020-02-22T11:55:00+00:00
+pav:lastUpdatedOn,2020-02-22T11:55:00+00:00
 
 
 Identifier,skos:prefLabel@en,"skos:altLabel(separator="","")",skos:definition@en,"skos:broader(separator="","")","skos:closeMatch(separator="","")","skos:exactMatch(separator="","")","skos:broadMatch(separator="","")","skos:narrowMatch(separator="","")","skos:relatedMatch(separator="","")",owl:deprecated^^xsd:boolean,dct:isReplacedBy,"dct:source(separator="","")",skos:editorialNote@en,"dct:creator(separator="","")","dct:contributor(separator="","")"
 rock-n-roll:Deprecated,Deprecated,,This is a set of controlled terms which are deprecated.,,, 
 rock-n-roll:TestTerm,TestTerm,,,rock-n-roll:Deprecated,, 
-rock-n-roll:
-rock-n-roll:
-rock-n-roll:
-rock-n-roll:
-rock-n-roll:
-rock-n-roll:
+rock-n-roll:bestrock,bestrock
+rock-n-roll:GeologicConcept,GeologicConcept,,"A subset of the Universe of all concepts, which includes only those concepts related to: ""The study of the planet Earth--the materials of which it is made, the processes that act on these materials, the products formed, and the history of the planet and its life forms since its origin."" [Jackson, 1997; p. 265] This conceptual model is focused primarily on geologic concepts that can be represented on geologic maps and diagrams. The term concept represents the notion of any mental phenomena that human beings use in their internal representation of the world. Webster’s dictionary [1996] uses the terms ‘idea’ and ‘object of thought’ to convey the meaning of ‘concept.’ GeologicConcepts identify the kinds of observable or inferred phenomena that earth scientists recognize."
+rock-n-roll:GeologicProperty,GeologicProperty,,An inherent feature used to characterize a GeologicConcept.,rock-n-roll:GeologicConcept
+rock-n-roll:EarthMaterial,EarthMaterial,,A naturally occuring substance in the Earth. EarthMaterialsare defined strictly by chemical and physical properties.,rock-n-roll:GeologicConcept
+rock-n-roll:CompoundMaterial,CompoundMaterial,MineralMix,"An EarthMaterial composed of other EarthMaterial instances, possibly including other CompoundMaterial instances. Includes consolidated and unconsolidated materials as well as mixtures of consolidated and unconsolidated materials.",rock-n-roll:EarthMaterial
+rock-n-roll:Rock,Rock,"Stone, ReallyHardThing","A consolidated aggregate of one or more EarthMaterials, or a body of undifferentiated mineral matter, or of solid organic material [adapted from Jackson, 1997]. Includes mineral aggregates such as granite, shale, marble; mineral matter, such as obsidian (Glass); and organic material, such a coal. Excludes unconsolidated materials.",rock-n-roll:CompundMaterial
+rock-n-roll:Mineral,Mineral,,"A naturally occurring inorganic element or compound having a periodically repeating arrangement of atoms and a characteristic chemical composition or range of compositions, resulting in distinctive physical properties. Includes mercury as a general exception to the requirement of crystallinity. Also includes cryptocrystalline materials such as chalcedony and amorphous silica.",rock-n-roll:EarthMaterial
+rock-n-roll:Color,Color,Colour,An attribute to describe the color of an instance of a concept such as EarthMaterial or GeologicUnit. A controlled vocabulary for color might be very useful.,rock-n-roll:GeologicProperty
+rock-n-roll:Green,Green,"Lime, DarkGreen, LightGreen",A color of an EarthMaterial,rock-n-roll:Color
 rock-n-roll:
