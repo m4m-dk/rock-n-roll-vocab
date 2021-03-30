@@ -1,10 +1,9 @@
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix pav: <http://purl.org/pav/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rock-n-roll: <http://ontology.deic.dk/cv/rock-n-roll/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
-<http://ontology.deic.dk/cv/rock-n-roll/> a skos:Concept, skos:ConceptScheme;
+<http://ontology.deic.dk/cv/rock-n-roll/> a skos:ConceptScheme;
   dct:creator <https://orcid.org/0000-0003-0682-8303>;
   dct:description "This Vocabulary describes some few terms of high level geologic concept hierarchy. This vocabulary is not complete and half randomly made up, but based on the USGS North American Geological Map Data Model. It is a test before the M4M workshop."@en;
   dct:rights <https://spdx.org/licenses/CC-BY-1.0.html>;
@@ -12,77 +11,4 @@
   pav:createdOn "2020-02-22T11:55:00+00:00"@en;
   pav:lastUpdatedOn "2020-02-22T11:55:00+00:00"@en;
   pav:version "0.1.0"@en;
-  skos:hasTopConcept <http://ontology.deic.dk/cv/rock-n-roll/>, rock-n-roll:Deprecated,
-    rock-n-roll:GeologicConcept, rock-n-roll:bestrock;
-  skos:inScheme <http://ontology.deic.dk/cv/rock-n-roll/>;
-  skos:prefLabel "rock-n-roll"@en;
-  skos:topConceptOf <http://ontology.deic.dk/cv/rock-n-roll/> .
-
-rock-n-roll:Deprecated a skos:Concept;
-  skos:definition "This is a set of controlled terms which are deprecated."@en;
-  skos:inScheme <http://ontology.deic.dk/cv/rock-n-roll/>;
-  skos:prefLabel "Deprecated"@en;
-  skos:topConceptOf <http://ontology.deic.dk/cv/rock-n-roll/> .
-
-rock-n-roll:bestrock a skos:Concept;
-  skos:inScheme <http://ontology.deic.dk/cv/rock-n-roll/>;
-  skos:prefLabel "bestrock"@en;
-  skos:topConceptOf <http://ontology.deic.dk/cv/rock-n-roll/> .
-
-rock-n-roll:GeologicConcept a skos:Concept;
-  skos:definition "A subset of the Universe of all concepts, which includes only those concepts related to: \"The study of the planet Earth--the materials of which it is made, the processes that act on these materials, the products formed, and the history of the planet and its life forms since its origin.\" [Jackson, 1997; p. 265] This conceptual model is focused primarily on geologic concepts that can be represented on geologic maps and diagrams. The term concept represents the notion of any mental phenomena that human beings use in their internal representation of the world. Webster’s dictionary [1996] uses the terms ‘idea’ and ‘object of thought’ to convey the meaning of ‘concept.’ GeologicConcepts identify the kinds of observable or inferred phenomena that earth scientists recognize."@en;
-  skos:inScheme <http://ontology.deic.dk/cv/rock-n-roll/>;
-  skos:narrower rock-n-roll:EarthMaterial, rock-n-roll:GeologicProperty;
-  skos:prefLabel "Geologic Concept"@en;
-  skos:topConceptOf <http://ontology.deic.dk/cv/rock-n-roll/> .
-
-rock-n-roll:GeologicProperty a skos:Concept;
-  skos:broader rock-n-roll:GeologicConcept;
-  skos:definition "An inherent feature used to characterize a GeologicConcept."@en;
-  skos:inScheme <http://ontology.deic.dk/cv/rock-n-roll/>;
-  skos:narrower rock-n-roll:Color;
-  skos:prefLabel "Geologic Property"@en .
-
-rock-n-roll:EarthMaterial a skos:Concept;
-  skos:broader rock-n-roll:GeologicConcept;
-  skos:definition "A naturally occuring substance in the Earth. EarthMaterialsare defined strictly by chemical and physical properties."@en;
-  skos:inScheme <http://ontology.deic.dk/cv/rock-n-roll/>;
-  skos:narrower rock-n-roll:CompoundMaterial, rock-n-roll:Mineral;
-  skos:prefLabel "Earth Material"@en .
-
-rock-n-roll:CompoundMaterial a skos:Concept;
-  skos:altLabel "MineralMix"@en;
-  skos:broader rock-n-roll:EarthMaterial;
-  skos:definition "An EarthMaterial composed of other EarthMaterial instances, possibly including other CompoundMaterial instances. Includes consolidated and unconsolidated materials as well as mixtures of consolidated and unconsolidated materials."@en;
-  skos:inScheme <http://ontology.deic.dk/cv/rock-n-roll/>;
-  skos:prefLabel "Compound Material"@en .
-
-rock-n-roll:Rock a skos:Concept;
-  skos:altLabel "ReallyHardThing"@en, "Stone"@en;
-  skos:broader rock-n-roll:CompundMaterial;
-  skos:definition "A consolidated aggregate of one or more EarthMaterials, or a body of undifferentiated mineral matter, or of solid organic material [adapted from Jackson, 1997]. Includes mineral aggregates such as granite, shale, marble; mineral matter, such as obsidian (Glass); and organic material, such a coal. Excludes unconsolidated materials."@en;
-  skos:inScheme <http://ontology.deic.dk/cv/rock-n-roll/>;
-  skos:prefLabel "Rock"@en .
-
-rock-n-roll:Mineral a skos:Concept;
-  skos:broader rock-n-roll:EarthMaterial;
-  skos:definition "A naturally occurring inorganic element or compound having a periodically repeating arrangement of atoms and a characteristic chemical composition or range of compositions, resulting in distinctive physical properties. Includes mercury as a general exception to the requirement of crystallinity. Also includes cryptocrystalline materials such as chalcedony and amorphous silica."@en;
-  skos:inScheme <http://ontology.deic.dk/cv/rock-n-roll/>;
-  skos:prefLabel "Mineral"@en .
-
-rock-n-roll:Color a skos:Concept;
-  skos:altLabel "Colour"@en;
-  skos:broader rock-n-roll:GeologicProperty;
-  skos:definition "An attribute to describe the color of an instance of a concept such as EarthMaterial or GeologicUnit. A controlled vocabulary for color might be very useful."@en;
-  skos:inScheme <http://ontology.deic.dk/cv/rock-n-roll/>;
-  skos:narrower rock-n-roll:Green;
-  skos:prefLabel "Color"@en .
-
-rock-n-roll:Green a skos:Concept;
-  skos:altLabel "DarkGreen"@en, "LightGreen"@en, "Lime"@en;
-  skos:broader rock-n-roll:Color;
-  skos:definition "A color of an EarthMaterial"@en;
-  skos:inScheme <http://ontology.deic.dk/cv/rock-n-roll/>;
-  skos:prefLabel "Green"@en .
-
-rock-n-roll:CompundMaterial skos:narrower rock-n-roll:Rock .
+  skos:prefLabel "rock-n-roll"@en .
